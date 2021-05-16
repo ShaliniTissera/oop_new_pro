@@ -1,0 +1,104 @@
+html, body {
+    overflow: hidden;
+}
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.43;
+    color: #29303B;
+    background-color: #FFF;
+    margin: 0;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    background: inherit;
+    background-color: #333333;
+    box-sizing: border-box;
+    height: 65px;
+}
+
+/* Split the screen in half */
+.split {
+    margin-top: 65px;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left:0;
+    background-color: #0b252d;
+}
+.leftm {
+    left:25%;
+    background-color: #003B46;
+}
+
+.rightm {
+    right:25%;
+    background-color: #0b252d;
+}
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: #003B46;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered-img {
+    width: 150px;
+    border-radius: 50%;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.centered-img:hover{
+    opacity: 1;
+}
+.button {
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+.button2 {
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2:hover {
+    background-color: white;
+    color: red;
+}
